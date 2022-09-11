@@ -1,36 +1,38 @@
 /*Swiper for reviews*/
-const productContainers = document.querySelector('.customers-section-cards-box');
-const left = document.querySelector('.left');
-const center = document.querySelector('.center');
-const right = document.querySelector('.right');
+const productContainers = document.querySelector('.customers-section-cards-box'),
+    left = document.querySelector('.left'),
+    center = document.querySelector('.center'),
+    right = document.querySelector('.right');
+
+const groupBtn = [left, center, right];
+
+function swiperBtnActive(item) {
+    item.classList.add("active-slider")
+    for (let i = 0; i < groupBtn.length; i++) {
+        if (groupBtn[i] !== item) {
+            groupBtn[i].classList.remove("active-slider")
+        }
+    }
+}
 
 if (left) {
     left.addEventListener('click', () => {
         productContainers.scrollLeft = -200;
-        left.classList.add("active-slider");
-        center.classList.remove("active-slider")
-        right.classList.remove("active-slider")
-        console.log(productContainers.scrollLeft)
+        swiperBtnActive(left);
     })
 }
 
 if (center) {
     center.addEventListener('click', () => {
         productContainers.scrollLeft = 300;
-        center.classList.add("active-slider");
-        left.classList.remove("active-slider")
-        right.classList.remove("active-slider")
-        console.log(productContainers.scrollLeft)
+        swiperBtnActive(center);
     })
 }
 
 if (right) {
     right.addEventListener('click', () => {
         productContainers.scrollLeft = 900;
-        right.classList.add("active-slider");
-        left.classList.remove("active-slider")
-        center.classList.remove("active-slider")
-        console.log(productContainers.scrollLeft)
+        swiperBtnActive(right);
     })
 }
 
@@ -70,11 +72,11 @@ questionAndAnswers.forEach(item => {
 })
 
 /*Navigation*/
-const whyMagicMassage = document.querySelector(".why-magic-massage");
-const features = document.querySelector(".features");
-const reviews = document.querySelector(".reviews");
-const faqQuestions = document.querySelector(".faq-questions");
-const activeLinks = [whyMagicMassage, features, reviews, faqQuestions]
+const whyMagicMassage = document.querySelector(".why-magic-massage"),
+    features = document.querySelector(".features"),
+    reviews = document.querySelector(".reviews"),
+    faqQuestions = document.querySelector(".faq-questions"),
+    activeLinks = [whyMagicMassage, features, reviews, faqQuestions];
 
 function mainLink(item) {
     item.classList.add("active-link")
@@ -91,13 +93,13 @@ activeLinks.forEach(item => {
     })
 })
 
-/*Hmmm*/
-const extraQuestionBtn = document.querySelector("#extraQuestionBtn");
-const extraQuestion = document.querySelector("#extraQuestion");
-const lastQuestionSvg = document.querySelector(".rotate-180")
+/*Extra questions*/
+const extraQuestionBtn = document.querySelector("#extraQuestionBtn"),
+    extraQuestion = document.querySelector("#extraQuestion"),
+    lastQuestionSvg = document.querySelector(".rotate-180");
 
 extraQuestionBtn.addEventListener("click", () => {
     extraQuestion.classList.toggle("showLastQuestion");
     extraQuestion.classList.toggle("border-none");
     lastQuestionSvg.classList.toggle("rotate-180");
-})
+});
