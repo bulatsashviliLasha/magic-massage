@@ -1,0 +1,298 @@
+@media screen and (max-width: 1510px){
+    .policy ul li {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .slider-dots{
+        visibility: unset;
+    }
+    .two-magic-massage, .policy ul li:last-child, .signature{
+        display: none;
+    }
+    .benefits{
+        justify-content: center;
+    }
+    .btn-and-buyer{
+        align-items: center;
+        flex-direction: column;
+    }
+    nav div{
+        padding-left: 17px;
+        padding-right: 14px;
+    }
+    .faq img {
+        align-self: unset;
+    }
+    .faq section{
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .buyer-review{
+        align-self: center;
+        margin-top: 16px;
+    }
+    h1{
+        justify-content: center;
+    }
+    .second-section-cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 68px;
+    }
+    .second-section-cards section:nth-of-type(2){
+        order: -10;
+    }
+    .second-section-cards section:last-child{
+        order: -5;
+    }
+    .most-popular, .best-value {
+        top: 88px;
+    }
+    .one-magic-massage--title{
+        margin-top: 0;
+    }
+    .three-magic-massage--title {
+        margin-top: 30px;
+    }
+    .five-magic-massage--title {
+        margin-top: 24px;
+    }
+    .price-pointer {
+        right: 50px;
+        top: 30px;
+        transform: rotate(-17deg);
+    }
+}
+@media screen and (max-width: 960px) {
+    nav ul, .desktop, .free-shipping{
+        display: none !important;
+    }
+    .benefits ul{
+        margin-bottom: 21px;
+        justify-content: center;
+        background: none;
+        border: none;
+    }
+    .benefits ul li:not(:first-child) {
+        border-left: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .first-section{
+        padding: 28px 0;
+    }
+    .benefits h3{
+        text-align: center;
+    }
+    .second-section-cards section {
+        width: 378px;
+    }
+
+    .one-magic-massage--title, .three-magic-massage--title, .five-magic-massage--title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .one-magic-massage--price span:first-child, .three-magic-massage--price div span:first-child, .five-magic-massage--price div span:first-child, .discounted {
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .green-save{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .six-orders{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .one-magic-massage .free-installments {
+        margin-bottom: 16px;
+        margin-top: 20px;
+    }
+    .second-section {
+        padding: 19px 19px 63px 18px;
+    }
+    .second-section .view h3 div:last-child, .second-section .view h3 div:first-child  {
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .whitespace-nowrap{
+        white-space: nowrap;
+    }
+    nav div{
+        justify-content: center !important;
+    }
+    .order-now-btn, .benefit-description{
+        display: none;
+    }
+    nav img{
+        width: 146.24px;
+    }
+    .mobile-two-magic-massage{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-two-magic-massage img:last-child{
+        align-self: end;
+    }
+    .mobile-two-magic-massage img:nth-of-type(2){
+        align-self: start;
+    }
+    h1{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+    h2{
+        padding: 28px 0 40px;
+    }
+    .benefits h3{
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 0;
+    }
+    .modify-text-border{
+        width: 97px;
+    }
+    .modify-text-border-two{
+        width: 165px;
+    }
+    .signature{
+        transform: translate(35%, -20%) rotatex(190deg);
+        scale: 1.1;
+        margin-left: 0;
+    }
+    .buyer-review img{
+        max-width: 377px;
+        width: 100%;
+    }
+    .svg-and-blue-text div{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 7px;
+    }
+    .btn-and-price a{
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        padding: 19px 72px;
+        white-space: nowrap;
+    }
+    .btn-and-price div{
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .policy{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 11px 0 ;
+    }
+    .policy ul li span{
+        white-space: unset;
+        text-align: center;
+        margin-right: 16px;
+    }
+    .policy ul li div{
+        width: 36px;
+        height: 36px;
+    }
+    .policy ul li div img{
+        scale: 0.66;
+        margin-left: 0;
+    }
+    .modify-tags{
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .signature{
+        display: block ;
+    }
+    .write-review div{
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+    }
+    .write-review div span{
+        margin-left: 0;
+    }
+    .write-review a{
+        padding: 13px 20px 10px 21px;
+        font-weight: 500;
+    }
+    .faq h3{
+        flex-wrap: wrap;
+        font-size: 30px;
+        line-height: 47px;
+    }
+    .faq h3 svg{
+        width: 70%;
+    }
+    .faq .faq-view{
+        padding: 25px 17px;
+    }
+    .question, .answer {
+        line-height: 22px;
+    }
+
+
+}
+@media screen and (max-width: 413px){
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center !important;
+    }
+    .signature {
+        transform: translate(25%, -5%) rotate(50deg);
+    }
+    .promotion{
+        gap: 0;
+    }
+    .modify-tags{
+        text-align: left;
+    }
+    .btn-and-price a{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .second-section-cards section {
+        width: 100%;
+    }
+    .free-installments{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .green-save{
+        width: 100%;
+        z-index: 2;
+    }
+    .get-your-magic-btn {
+        padding: 10px 60px;
+    }
+    .get-your-magic-btn:hover{
+        padding: 9px 59px;
+    }
+    .sm-img{
+        width: 100%;
+    }
+}

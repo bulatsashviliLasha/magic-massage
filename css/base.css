@@ -1,0 +1,286 @@
+:root {
+    --blue-primary: #197AFF;
+    --blue-secondary: #11346F;
+    --white: #FFFFFF;
+}
+
+.active-link{
+    font-weight: 700;
+    opacity: 1;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.color-black {
+    color: #262626;
+}
+.self-start{
+    align-self: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.border-none{
+    border: none;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.block {
+    display: block;
+}
+
+.translateY-30px {
+    transform: translatey(-30px);
+    z-index: 2;
+}
+.fixed{
+    position: fixed;
+}
+.z-10{
+    z-index: 10;
+}
+.top-0{
+    top: 0;
+}
+.gap-8 {
+    gap: 8px;
+}
+
+.margin-0 {
+    margin: 0 !important;
+}
+
+.padding-4_5 {
+    padding: 4.5px;
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('../assets/fonts/Gilroy-Light.otf');
+format('otf'),
+}
+
+
+.border-left {
+    position: absolute;
+    left: 0;
+    height: 50px;
+    background-color: rgba(174, 204, 255, 0.6);
+    width: 1px;
+    bottom: 11px;
+}
+
+.border-right {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    background-color: rgba(174, 204, 255, 0.6);
+    width: 1px;
+    bottom: 11px;
+}
+
+/*Scroll top*/
+.scroll_top {
+    width: 54px;
+    border: 1px solid white;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blue-secondary);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .4s ease, opacity .4s ease;
+    cursor: pointer;
+}
+
+.scroll_top:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+/*SandClock animation*/
+
+.hourglass, .hourglass:before, .hourglass:after {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.hourglass {
+    --polygonH: polygon(0% 0%, 100% 0%, 100% 5.55%, 95% 5.55%, 95% 28%, 60% 46%, 60% 54%, 95% 72%, 95% 94.45%, 100% 94.45%, 100% 100%, 0% 100%, 0% 94.45%, 5% 94.45%, 5% 72%, 40% 54%, 40% 46%, 5% 28%, 5% 5.55%, 0% 5.55%);
+    animation-name: flip;
+    animation-timing-function: ease-in-out;
+    background-image: linear-gradient(#197AFF 0.5em, #DADADA 0.5em 8.5em, #197AFF 8.5em);
+    clip-path: var(--polygonH);
+    -webkit-clip-path: var(--polygonH);
+    overflow: hidden;
+    position: relative;
+    width: 5em;
+    height: 9em;
+    z-index: 0;
+    font-size: 4px;
+
+}
+
+.hourglass:before, .hourglass:after {
+    animation-timing-function: linear;
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.hourglass:before {
+    --polygonB1: polygon(0% 0%, 100% 0%, 100% 24%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 0% 24%);
+    --polygonB2: polygon(0% 4%, 100% 4%, 100% 24%, 55% 45%, 55% 100%, 55% 100%, 55% 100%, 45% 100%, 45% 100%, 45% 100%, 45% 45%, 0% 24%);
+    --polygonB3: polygon(0% 24%, 100% 24%, 100% 24%, 55% 45%, 55% 80%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 45% 80%, 45% 45%, 0% 24%);
+    --polygonB4: polygon(45% 45%, 55% 45%, 55% 45%, 55% 45%, 55% 58%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 45% 58%, 45% 45%, 45% 45%);
+    --polygonB5: polygon(50% 53%, 50% 53%, 50% 53%, 50% 53%, 50% 53%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 50% 53%, 50% 53%, 50% 53%);
+    animation-name: fill;
+    background-color: #197AFF;
+    background-size: 100% 3.6em;
+    clip-path: var(--polygonB1);
+    -webkit-clip-path: var(--polygonB1);
+    top: 0.5em;
+    left: 0.5em;
+    width: 4em;
+    height: 8em;
+    z-index: 1;
+}
+
+/* Animations */
+.hourglass, .hourglass:before, .hourglass:after {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.hourglass {
+    --polygonH: polygon(0% 0%, 100% 0%, 100% 5.55%, 95% 5.55%, 95% 28%, 60% 46%, 60% 54%, 95% 72%, 95% 94.45%, 100% 94.45%, 100% 100%, 0% 100%, 0% 94.45%, 5% 94.45%, 5% 72%, 40% 54%, 40% 46%, 5% 28%, 5% 5.55%, 0% 5.55%);
+    animation-name: flip;
+    animation-timing-function: ease-in-out;
+    background-image: linear-gradient(#197AFF 0 0.3em, #E2EDFF 0.3em 0.6em, #DADADA 0.6em 4.15em, #E2EDFF 4.15em 4.45em, #197AFF 4.45em 4.75em);
+    clip-path: var(--polygonH);
+    -webkit-clip-path: var(--polygonH);
+    overflow: hidden;
+    position: relative;
+    width: 4.5em;
+    height: 4.75em;
+    z-index: 0;
+    font-size: 4px;
+}
+
+.hourglass:before, .hourglass:after {
+    animation-timing-function: linear;
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.hourglass:before {
+    --polygonB1: polygon(0% 0%, 100% 0%, 100% 24%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 50% 47%, 0% 24%);
+    --polygonB2: polygon(0% 4%, 100% 4%, 100% 24%, 55% 45%, 55% 100%, 55% 100%, 55% 100%, 45% 100%, 45% 100%, 45% 100%, 45% 45%, 0% 24%);
+    --polygonB3: polygon(0% 24%, 100% 24%, 100% 24%, 55% 45%, 55% 80%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 45% 80%, 45% 45%, 0% 24%);
+    --polygonB4: polygon(45% 45%, 55% 45%, 55% 45%, 55% 45%, 55% 58%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 45% 58%, 45% 45%, 45% 45%);
+    --polygonB5: polygon(50% 53%, 50% 53%, 50% 53%, 50% 53%, 50% 53%, 100% 76%, 100% 100%, 0% 100%, 0% 76%, 50% 53%, 50% 53%, 50% 53%);
+    animation-name: fill;
+    background-color: #197AFF;
+    background-size: 100% 3.6em;
+    clip-path: var(--polygonB1);
+    -webkit-clip-path: var(--polygonB1);
+    top: 0.5em;
+    left: 0.25em;
+    width: 4em;
+    height: 3.75em;
+    z-index: 1;
+}
+
+/* Animations */
+@keyframes fill {
+    from {
+        clip-path: var(--polygonB1);
+        -webkit-clip-path: var(--polygonB1);
+    }
+    10% {
+        clip-path: var(--polygonB2);
+        -webkit-clip-path: var(--polygonB2);
+    }
+    45% {
+        clip-path: var(--polygonB3);
+        -webkit-clip-path: var(--polygonB3);
+    }
+    80% {
+        clip-path: var(--polygonB4);
+        -webkit-clip-path: var(--polygonB4);
+    }
+    85%, to {
+        clip-path: var(--polygonB5);
+        -webkit-clip-path: var(--polygonB5);
+    }
+}
+
+@keyframes flip {
+    from, 90% {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}

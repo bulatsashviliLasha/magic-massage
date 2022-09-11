@@ -1,0 +1,546 @@
+.mobile-two-magic-massage, .mobile{
+    display: none;
+}
+main{
+    margin-top: 90px;
+}
+.promotion {
+    background-color: var(--blue-secondary);
+    justify-content: center;
+    gap: 20px;
+    color: var(--white);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 4px 0;
+}
+nav{
+    background: rgba(245, 253, 255, 0.8);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(28px);
+}
+nav div {
+    padding: 12px 0 13px 0;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    gap: 60px;
+}
+.why-magic-massage, .features, .faq-questions, .reviews {
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--blue-secondary);
+    font-weight: 600;
+    opacity: 0.75;
+}
+
+.order-now-btn {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--white);
+    background: var(--blue-primary);
+    border-radius: 60px;
+    padding: 11px 39px 12px 38px;
+}
+.order-now-btn:hover{
+    background: var(--white);
+    color: var(--blue-primary);
+    border: 1px solid var(--blue-primary);
+    padding: 10px 38px 11px 37px;
+}
+.first-section{
+    background-color: #FBFBFB;
+    padding: 63px 0 34px 0;
+}
+.customers-section-container,.first-section .view, nav div, .policy ul, .faq .faq-view{
+    max-width: 1258px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first-section .view, .policy ul{
+    padding-left: 17px;
+    padding-right: 14px;
+}
+h1,h2{
+    display: flex;
+    font-weight: 700;
+    color: var(--blue-secondary);
+}
+h1{
+    font-size: 42px;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+h2{
+    justify-content: center;
+    padding: 48px 0;
+    font-size: 37px;
+    line-height: 49px;
+}
+h5{
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--blue-secondary);
+}
+.modify-tags{
+    text-align: center;
+    align-items: center;
+}
+.modify-text-border{
+    align-self: end;
+    margin-top: 3px;
+}
+.signature{
+    margin-left: 5px;
+}
+.modify-text{
+    color: var(--blue-primary);
+}
+.policy {
+    background: var(--blue-secondary);
+    backdrop-filter: blur(4px);
+    color: var(--white);
+    padding: 24px 0 23px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+}
+.policy ul {
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+}
+.policy ul li{
+    display: flex;
+    align-items: center;
+}
+.policy ul li div{
+    background-color: var(--white);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.policy ul li span{
+    margin-left: 16px;
+    white-space: nowrap;
+}
+.btn-and-buyer{
+    justify-content: space-between;
+}
+.btn-and-price{
+    flex-direction: column;
+}
+.btn-and-price a{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--white);
+    background-color: var(--blue-primary);
+    border-radius: 60px;
+    padding: 19px 59px 19px 57px;
+    margin-bottom: 18px;
+}
+.btn-and-price a:hover{
+    color: var(--blue-primary);
+    background-color: var(--white);
+    border: 1px solid var(--blue-primary);
+    padding: 18px 58px 18px 56px;
+}
+.btn-and-price div{
+    align-self: center;
+    padding: 10px 28px;
+    background: rgba(77, 145, 207, 0.15);
+    box-shadow: 0px 0px 14px var(--white);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+}
+.btn-and-price div span{
+    color: var(--blue-primary);
+}
+.buyer-review{
+    align-self: flex-end;
+}
+.benefits{
+    justify-content: space-between;
+}
+.benefits h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 686px;
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+.benefits ul{
+    background: rgba(174, 204, 255, 0.1);
+    border: 1px solid rgba(174, 204, 255, 0.5);
+    border-radius: 10px;
+    padding: 16px 0 17px;
+    margin-bottom: 52px;
+}
+.benefits ul li{
+    text-align: center;
+    padding: 0 15px;
+}
+.benefits ul li:not(:first-child){
+    border-left: 1px solid #CEE2FF;
+}
+.svg-and-blue-text div {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--blue-secondary);
+    margin-top: 12px;
+}
+.benefit-description{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+}
+.two-magic-massage{
+    align-self: end;
+}
+.second-section{
+    background: linear-gradient(118.72deg, #AECCFF -18.14%, var(--blue-primary) 165.34%);
+    padding: 29px 19px 54px 18px;
+}
+.second-section .view h3 div:first-child{
+    font-size: 37px;
+    line-height: 49px;
+    color: var(--blue-secondary);
+    text-align: center;
+}
+.second-section .view h3 div:last-child{
+    font-weight: 900;
+    font-size: 37px;
+    line-height: 50px;
+    color: var(--white);
+    margin-bottom: 61px;
+}
+.second-section-cards{
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+.second-section-cards section{
+    width: 368px;
+    border-radius: 18px;
+    border: 1.5px solid var(--blue-primary);
+    padding: 0 18px 24px;
+}
+.second-section-cards section:first-child, .second-section-cards section:last-child{
+    background: rgba(246, 248, 252, 0.7);
+}
+.second-section-cards section:nth-of-type(2){
+    background: linear-gradient(180deg, var(--white) 0%, #D7E6FF 100%);
+}
+.second-section-cards section:last-child{
+
+}
+.one-magic-massage--title,.three-magic-massage--title,.five-magic-massage--title{
+    font-weight: 700;
+    color: var(--blue-secondary);
+}
+.one-magic-massage--title,.three-magic-massage--title{
+    margin-top: 50px ;
+}
+.five-magic-massage--title{
+    margin-top: 44px;
+}
+.three-magic-massage--title, .five-magic-massage--title{
+    font-size: 30px;
+    line-height: 40px;
+}
+.one-magic-massage--title{
+    font-size: 28px;
+    line-height: 37px;
+}
+.three-magic-massage--title span,.five-magic-massage--title span{
+    color: var(--blue-primary);
+}
+.one-magic-massage--price, .three-magic-massage--price,.five-magic-massage--price{
+    color: var(--blue-secondary);
+    margin-top: 20px;
+}
+.three-magic-massage--price,.five-magic-massage--price{
+    gap: 15px;
+}
+.one-magic-massage--price span:first-child, .three-magic-massage--price div span:first-child, .five-magic-massage--price div span:first-child{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+}
+.one-magic-massage--price span:last-child, .three-magic-massage--price div span:last-child, .five-magic-massage--price div span:last-child{
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+}
+.one-magic-massage--money-back{
+    margin: 28px 0 37px;
+}
+.one-magic-massage--money-back,
+.five-magic-massage--money-back,
+.three-magic-massage--money-back{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--blue-secondary);
+}
+.five-magic-massage--money-back, .three-magic-massage--money-back{
+    border-radius: 80px;
+    border: 1px solid #AECCFF;
+    padding: 9px 11px 9px 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    justify-content: end;
+}
+.discounted{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 42px;
+    color: #93A2BB;
+    text-decoration: line-through;
+}
+.get-your-magic-btn{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: var(--white);
+    padding: 15px 87px 14px 81px;
+    background: var(--blue-primary);
+    box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+    border-radius: 60px;
+    margin-bottom: 21px;
+}
+.get-your-magic-btn:hover{
+    color: var(--blue-primary);
+    background-color: var(--white);
+    border: 1px solid var(--blue-primary);
+    padding: 14px 86px 13px 80px;
+}
+.most-popular, .best-value{
+    top: 108px;
+}
+.price-pointer{
+    right: 20px;
+    top: 70px;
+}
+.six-orders{
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 17px;
+    color: var(--blue-secondary);
+}
+.time-and-orders{
+    border-bottom: 1px solid #AECCFF;
+    border-radius: 19px;
+    padding: 11px 0 14px;
+    margin-bottom: 18px;
+}
+.write-review{
+    padding-left: 18px;
+    padding-right: 17px;
+    margin-bottom: 18px;
+}
+.write-review a{
+    font-size: 14px;
+    line-height: 17px;
+    color: #3A3075;
+    padding: 7px 20px 6px 21px;
+    font-family: "Gilroy";
+    font-weight: 400;
+    border: 1px solid #213786;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.write-review a:hover{
+    background-color: #213786;
+    color: white;
+    transition: .5s;
+}
+.write-review div span{
+    color: var(--blue-secondary);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 7px;
+    white-space: nowrap;
+}
+.customers-section{
+    background-color: #F6F8FC;
+}
+.customers-section-cards-box {
+    padding-left: 18px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.customers-section-cards-box::-webkit-scrollbar {
+    display: none;
+}
+.customer-card {
+    margin-right: 30px;
+    width: 285px;
+}
+.customer-card-border{
+    border: 1px solid #E9E9E9;
+    border-radius: 0 0 10px 10px;
+    height: 303px;
+    padding: 10px 0 0 10px;
+    background: var(--white);
+}
+.customer-image {
+    width: 285px;
+    height: 169px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+.customer-description{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 26px;
+    color: #262626;
+    padding: 0 18px 18px 9px;
+}
+.checked-and-verified{
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    color: #89C25F;
+}
+.checked-and-verified span{
+    margin-left: 8.75px;
+}
+.name-and-verified-buyer{
+    gap: 46.75px;
+    padding: 10px 0 6px 3px;
+}
+.slider-dots{
+    gap: 10px;
+    margin-top: 22px;
+    padding-bottom: 32px;
+    visibility: hidden;
+}
+.active-slider{
+    background: var(--blue-primary) !important;
+}
+.left,.right,.center{
+    width: 14px;
+    height: 14px;
+    border-radius: 30px;
+    background: #CBCED6;
+    cursor: pointer;
+}
+.one-magic-massage .free-installments{
+    margin-bottom: 48px;
+}
+.three-magic-massage .free-installments, .five-magic-massage .free-installments{
+    margin-top: 11px;
+    margin-bottom: 15.89px;
+    gap: 5px;
+    white-space: nowrap;
+}
+.free-installments{
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: var(--blue-secondary);
+}
+.green-save{
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--blue-secondary);
+    text-align: center;
+    padding: 14px;
+    background: #BFF5BE;
+    border: 1px solid #99D298;
+    border-radius: 48px;
+}
+.faq{
+    background-color: var(--blue-secondary);
+}
+.faq .faq-view{
+    padding: 34px 17px 69px;
+}
+.faq h3{
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 49px;
+    color: var(--white);
+    margin-bottom: 64px;
+    text-align: center;
+}
+.faq-section{
+    gap: 16px;
+}
+.faq img{
+    align-self: start;
+}
+.see-all-faq{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F6F8FC;
+    gap: 12px;
+    padding: 10px 0 0 5px;
+}
+.question {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white);
+}
+.question-container{
+    background: #194081;
+    padding: 20px 30px;
+    border-bottom: 1px solid #31548E;
+    border-radius: 9px;
+}
+.question-and-answer{
+    border: 1px solid #31548E;
+    border-radius: 9px;
+}
+.answer{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #AECCFF;
+    padding: 20px 30px;
+}
+.answer-container,#extraQuestion{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.question-and-answer.active .answer-container, #extraQuestion.showLastQuestion{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+.question-and-answer.active svg{
+    transform: rotate(180deg);
+}
+.question-and-answer svg, #extraQuestionBtn svg{
+    transition: transform 0.6s ease-in;
+}
+
+
+
+
