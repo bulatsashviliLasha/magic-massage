@@ -18,17 +18,18 @@
         align-items: center;
         flex-direction: column;
     }
-    nav div{
+    .first-section .view, .policy ul, nav div{
         padding-left: 17px;
         padding-right: 14px;
     }
     .faq img {
         align-self: unset;
+        margin-bottom: 24px;
     }
     .faq section{
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: 0;
     }
     .buyer-review{
         align-self: center;
@@ -40,13 +41,15 @@
     .second-section-cards{
         flex-direction: column;
         align-items: center;
-        gap: 68px;
+        gap: 0;
     }
     .second-section-cards section:nth-of-type(2){
         order: -10;
     }
     .second-section-cards section:last-child{
         order: -5;
+        margin-top: 68px;
+        margin-bottom: 68px;
     }
     .most-popular, .best-value {
         top: 88px;
