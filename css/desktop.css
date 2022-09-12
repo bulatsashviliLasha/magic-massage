@@ -55,14 +55,11 @@ nav ul {
     padding: 63px 0 34px 0;
 }
 .customers-section-container,.first-section .view, nav div, .policy ul, .faq .faq-view{
-    max-width: 1258px;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
 }
-.first-section .view, .policy ul{
-    padding-left: 17px;
-    padding-right: 14px;
-}
+
 h1,h2{
     display: flex;
     font-weight: 700;
@@ -105,7 +102,7 @@ h5{
     color: var(--white);
     padding: 24px 0 23px;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
 }
 .policy ul {
@@ -432,7 +429,6 @@ h5{
     padding: 10px 0 6px 3px;
 }
 .slider-dots{
-    gap: 10px;
     margin-top: 22px;
     padding-bottom: 32px;
     visibility: hidden;
@@ -446,6 +442,10 @@ h5{
     border-radius: 30px;
     background: #CBCED6;
     cursor: pointer;
+}
+.center{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .one-magic-massage .free-installments{
     margin-bottom: 48px;
@@ -488,9 +488,6 @@ h5{
     margin-bottom: 64px;
     text-align: center;
 }
-.faq-section{
-    gap: 16px;
-}
 .faq img{
     align-self: start;
 }
@@ -517,6 +514,7 @@ h5{
 .question-and-answer{
     border: 1px solid #31548E;
     border-radius: 9px;
+    margin-bottom: 16px;
 }
 .answer{
     font-weight: 600;
@@ -540,7 +538,3 @@ h5{
 .question-and-answer svg, #extraQuestionBtn svg{
     transition: transform 0.6s ease-in;
 }
-
-
-
-
