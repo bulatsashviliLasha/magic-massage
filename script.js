@@ -69,29 +69,44 @@ questionAndAnswers.forEach(item => {
     item.addEventListener("click", () => {
         item.classList.toggle("active")
     })
-})
+});
 
-/*Navigation*/
-const whyMagicMassage = document.querySelector(".why-magic-massage"),
-    features = document.querySelector(".features"),
-    reviews = document.querySelector(".reviews"),
-    faqQuestions = document.querySelector(".faq-questions"),
-    activeLinks = [whyMagicMassage, features, reviews, faqQuestions];
+/*Change nav link active state*/
 
-function mainLink(item) {
-    item.classList.add("active-link")
-    for (let i = 0; i < activeLinks.length; i++) {
-        if (activeLinks[i] !== item) {
-            activeLinks[i].classList.remove("active-link")
-        }
-    }
-}
+const whyMagicMassageClass = document.querySelector(".why-magic-massage"),
+    featuresClass = document.querySelector(".features"),
+    reviewsClass = document.querySelector(".reviews"),
+    faqQuestionsClass = document.querySelector(".faq-questions"),
+    activeLinksClass = [whyMagicMassageClass, featuresClass, reviewsClass, faqQuestionsClass];
 
-activeLinks.forEach(item => {
-    item.addEventListener("click", () => {
-        mainLink(item)
-    })
-})
+
+
+const whyMagicMassageId = document.querySelector("#why-magic-massage"),
+    featuresId = document.querySelector("#features"),
+    reviewsId = document.querySelector("#reviews"),
+    faqQuestionsId = document.querySelector("#faq-questions"),
+    activeLinksId = [whyMagicMassageId, featuresId, reviewsId, faqQuestionsId];
+
+
+
+window.onscroll = () => {
+    let current = "";
+
+    setTimeout(() => {
+        activeLinksId.forEach((item) => {
+            const sectionTop = item.offsetTop;
+            if (pageYOffset >= sectionTop - 160) {
+                current = item.getAttribute("id"); }
+        });
+
+        activeLinksClass.forEach((item) => {
+            item.classList.remove("active-link");
+            if (item.classList.contains(current)) {
+                item.classList.add("active-link");
+            }
+        });
+    }, 500)
+};
 
 /*Extra questions*/
 const extraQuestionBtn = document.querySelector("#extraQuestionBtn"),
