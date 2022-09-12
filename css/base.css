@@ -133,6 +133,7 @@ format('otf'),
     visibility: hidden;
     transition: visibility .4s ease, opacity .4s ease;
     cursor: pointer;
+    z-index: 20;
 }
 
 .scroll_top:before {
